@@ -1,0 +1,20 @@
+{
+	"presets": [
+		"react-native"
+	],
+	"plugins": [
+		["module-resolver", {
+			"root": ["./"],
+			"alias": {
+				"@": "./src",
+				"services":"./src/services",
+				"nativeBridge":"./src/libs/nativeBridge",
+				"json":"./src/json",
+				"imgs":"./src/imgs",
+				"components":"./src/components",
+				"views":"./src/views"
+			},
+			"extensions": [".js", ".ios.js", ".android.js"]
+		}]
+	]
+}
