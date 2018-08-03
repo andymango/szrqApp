@@ -2,7 +2,7 @@
 //  MineViewController.swift
 //  szrq
 //
-//  Created by 123 on 2018/8/2.
+//  Created by dxc on 2018/8/2.
 //  Copyright © 2018年 dxc. All rights reserved.
 //
 
@@ -52,7 +52,7 @@ class MineViewController: BaseLoginViewController {
         
         let btnHeight = 30 as CGFloat;
         let marginTop = 10 as CGFloat;
-        btn.frame = CGRect.init(x: 10, y: AppViewAdapter.StatusBarHeight + (CGFloat(tag) * (btnHeight + marginTop)), width: self.view.bounds.size.width - 20, height: btnHeight);
+        btn.frame = CGRect.init(x: 10, y: AppViewAdapter.statusBarHeight + (CGFloat(tag) * (btnHeight + marginTop)), width: self.view.bounds.size.width - 20, height: btnHeight);
         
         btn.addTarget(self, action: #selector(btnTouchDown), for: UIControlEvents.touchDown)
         btn.addTarget(self, action: #selector(btnTouchUpInside), for: UIControlEvents.touchUpInside)

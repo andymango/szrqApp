@@ -2,12 +2,16 @@
 //  Router.swift
 //  szrq
 //
-//  Created by 123 on 2018/8/2.
+//  Created by dxc on 2018/8/2.
 //  Copyright © 2018年 dxc. All rights reserved.
 //
 
 import UIKit
 
+//导航配置
+public struct NavConfig {
+    var animated: Bool = true;
+};
 
 //扩展UINavigationController
 extension UINavigationController{
@@ -37,16 +41,29 @@ extension UINavigationController{
     ]
     
     //根据视图控制器入栈
-    public func pushRoute(viewControlller: UIViewController) -> Void{
-        self.pushViewController(viewControlller, animated: true)
+    public func pushRoute(viewControlller: UIViewController, navConfig: NavConfig?) -> Void{
+        if let nConfig = navConfig{
+            self.pushViewController(viewControlller, animated: nConfig.animated)
+        } else{
+            self.pushViewController(viewControlller, animated: true)
+        }
+    }
+    
+    //根据path入栈
+    public func pushRoute(path: String, navConfig: NavConfig?) -> Void{
+        let routeVc = UINavigationController.RouterConfig[path]!();
+        
+        return self.pushRoute(viewControlller: routeVc, navConfig: navConfig);
     }
     
     //根据path入栈
     public func pushRoute(path: String) -> Void{
-        let routeVc = UINavigationController.RouterConfig[path]!();
-        //        UINavigationController.RouterConfig.contains(where: <#T##((key: String, value: () -> UIViewController)) throws -> Bool#>)
-        
-        return self.pushRoute(viewControlller: routeVc);
+        return self.pushRoute(path: path, navConfig: NavConfig())
+    }
+    
+    //根据path入栈
+    public func pushRoute(viewControlller: UIViewController) -> Void{
+        return self.pushRoute(viewControlller: viewControlller, navConfig: NavConfig())
     }
 }
 

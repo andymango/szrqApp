@@ -113,28 +113,20 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		9D49089A2114264B00DBB784 /* Static */ = {
+		9D49089C211439C900DBB784 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D49089F2114535300DBB784 /* Config */ = {
 			isa = PBXGroup;
 			children = (
 				9DDF9B4E211294A30011B4C2 /* AppViewAdapter.swift */,
 				9D4908982114247900DBB784 /* StyleVars.swift */,
 			);
-			path = Static;
-			sourceTree = "<group>";
-		};
-		9D49089C211439C900DBB784 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				9D49089E211439FB00DBB784 /* Structs */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		9D49089E211439FB00DBB784 /* Structs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Structs;
+			path = Config;
 			sourceTree = "<group>";
 		};
 		9DDF9B41211292450011B4C2 /* Services */ = {
@@ -166,7 +158,6 @@
 		9DDF9B50211296250011B4C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9D49089A2114264B00DBB784 /* Static */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -222,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				9D4908972113346E00DBB784 /* Assets */,
+				9D49089F2114535300DBB784 /* Config */,
 				9DDF9B4A2112938C0011B4C2 /* Features */,
 				9D49089C211439C900DBB784 /* Models */,
 				9DDF9B41211292450011B4C2 /* Services */,
