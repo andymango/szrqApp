@@ -33,7 +33,59 @@ class MineViewController: BaseLoginViewController {
         
         
         NSLog("渲染label")
+        
+        renderBtn(tag: 3 ,title: "进入登录");
         // Do any additional setup after loading the view.
+    }
+    func renderBtn(tag: Int, title: String) -> Void {
+        let btn = UIButton();
+        btn.tag = tag;
+        btn.setTitle("\(title)", for: UIControlState.normal);
+        btn.setTitle("我被点击了", for: UIControlState.highlighted);
+        btn.setTitleColor(UIColor.blue, for: UIControlState.normal);
+        btn.setTitleColor(UIColor.white, for: UIControlState.highlighted);
+        btn.backgroundColor = UIColor.brown;
+        
+        //事件绑定
+        //        btn.addTarget(self, action: Selector("clickEvent:"), for: UIControlEvents.touchUpInside)
+        //        btn.addTarget(self, action: "clickEvent:", for: UIControlEvents.touchUpInside)
+        
+        let btnHeight = 30 as CGFloat;
+        let marginTop = 10 as CGFloat;
+        btn.frame = CGRect.init(x: 10, y: AppViewAdapter.StatusBarHeight + (CGFloat(tag) * (btnHeight + marginTop)), width: self.view.bounds.size.width - 20, height: btnHeight);
+        
+        btn.addTarget(self, action: #selector(btnTouchDown), for: UIControlEvents.touchDown)
+        btn.addTarget(self, action: #selector(btnTouchUpInside), for: UIControlEvents.touchUpInside)
+        
+        self.view.addSubview(btn);
+    }
+    
+    //按钮按下去
+    @objc func btnTouchDown(sender: UIButton) -> String{
+        print("按下去", sender.tag);
+        
+        sender.backgroundColor = UIColor.init(red: 122, green: 311, blue: 323, alpha: 0.5)
+        return "";
+    }
+    
+    //按钮按起来
+    @objc func btnTouchUpInside(sender: UIButton) -> String{
+        print("按起来");
+        sender.backgroundColor = UIColor.brown;
+        
+        //跳转
+        switch sender.tag{
+        case 2:
+            self.navigationController?.pushRoute(path: "/rn");
+            break;
+        case 3:
+            self.navigationController?.pushRoute(path: "/login");
+            break;
+        default:
+            self.navigationController?.pushRoute(viewControlller: MineViewController());
+            break;
+        }
+        return "";
     }
 
     override func didReceiveMemoryWarning() {

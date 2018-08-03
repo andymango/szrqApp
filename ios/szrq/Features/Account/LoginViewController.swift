@@ -13,7 +13,14 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false;
+        self.navigationItem.prompt = "正在加载数据";
+        //        let timer = Timer(timeInterval: <#T##TimeInterval#>, invocation: <#T##NSInvocation#>, repeats: <#T##Bool#>)
+        //        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
+        //        self.navigationController.trans
     }
 
     override func didReceiveMemoryWarning() {

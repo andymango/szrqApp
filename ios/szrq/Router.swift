@@ -1,4 +1,4 @@
-//
+// 全局导航控制器
 //  Router.swift
 //  szrq
 //
@@ -8,12 +8,55 @@
 
 import UIKit
 
+
+//扩展UINavigationController
+extension UINavigationController{
+    //重置导航控制器
+    func reset() -> Void {
+        self.interactivePopGestureRecognizer?.isEnabled = true;//默认开启右滑
+    }
+    
+    //路由配置
+    public static let RouterConfig: [String: () -> UIViewController] = [
+        //主页
+        "/home": {() -> UIViewController in
+            return HomeViewController();
+        },
+        //我的
+        "/mine": {() -> UIViewController in
+            return MineViewController();
+        },
+        //登录
+        "/login": {() -> UIViewController in
+            return LoginViewController();
+        },
+        //rn的页面
+        "/rn": {() -> UIViewController in
+            return RNViewController();
+        }
+    ]
+    
+    //根据视图控制器入栈
+    public func pushRoute(viewControlller: UIViewController) -> Void{
+        self.pushViewController(viewControlller, animated: true)
+    }
+    
+    //根据path入栈
+    public func pushRoute(path: String) -> Void{
+        let routeVc = UINavigationController.RouterConfig[path]!();
+        //        UINavigationController.RouterConfig.contains(where: <#T##((key: String, value: () -> UIViewController)) throws -> Bool#>)
+        
+        return self.pushRoute(viewControlller: routeVc);
+    }
+}
+
 class Router: UINavigationController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
         
-        // Do any additional setup after loading the view.
+        setNavBarStyle();
+        reset();
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +64,9 @@ class Router: UINavigationController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //设置全局导航栏的样式
+    func setNavBarStyle(){
+        UINavigationBar.appearance().tintColor = UIColor.red;//导航栏字体颜色
+//        UINavigationBar.appearance().isTranslucent = true;
     }
-    */
-
 }

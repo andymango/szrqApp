@@ -13,7 +13,7 @@ class RNViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true;
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false;
         print("this is rn page");
         
         let strUrl = "http://localhost:8081/index.bundle?platform=ios&dev=true"

@@ -12,7 +12,6 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true;
 //        self.navigationController?.isNavigationBarHidden = true;
 //        print("??????", self.view.bounds.height)
         initView();
@@ -47,6 +46,7 @@ class HomeViewController: BaseViewController {
         
         renderBtn(tag: 1 ,title: "进mine");
         renderBtn(tag: 2, title: "进入rn");
+        renderBtn(tag: 3, title: "进入登录");
     }
     
     let screenWidth = UIScreen.main.bounds.width
@@ -90,10 +90,13 @@ class HomeViewController: BaseViewController {
         //跳转
         switch sender.tag{
         case 2:
-            self.navigationController?.pushViewController(RNViewController(), animated: true);
+            self.navigationController?.pushRoute(path: "/rn");
+            break;
+        case 3:
+            self.navigationController?.pushRoute(path: "/login");
             break;
         default:
-            self.navigationController?.pushViewController(MineViewController(), animated: true);
+            self.navigationController?.pushRoute(viewControlller: MineViewController());
             break;
         }
         return "";
