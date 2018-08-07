@@ -12,6 +12,13 @@ class MineViewController: BaseLoginViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //创建按钮对象
+        let rightButton = UIBarButtonItem(title: "跳转", style: .plain, target: self, action: #selector(rightButtonAction))
+        //给右侧rightBarButtonItem赋值
+        self.navigationItem.rightBarButtonItem = rightButton
+        
+        self.navigationItem.title = "我的";
 //        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true;
 
         let label = UILabel();
@@ -37,6 +44,14 @@ class MineViewController: BaseLoginViewController {
         renderBtn(tag: 3 ,title: "进入登录");
         // Do any additional setup after loading the view.
     }
+    
+    //设置rightButtonAction的关联方法
+    @objc func rightButtonAction() {
+        //        let redVC = RedViewController()
+        //        self.navigationController?.pushViewController(redVC, animated: true)
+        print("点击了右上交按钮")
+    }
+    
     func renderBtn(tag: Int, title: String) -> Void {
         let btn = UIButton();
         btn.tag = tag;
@@ -76,13 +91,13 @@ class MineViewController: BaseLoginViewController {
         //跳转
         switch sender.tag{
         case 2:
-            self.navigationController?.pushRoute(path: "/rn");
+            self.navigationController?.push(path: "/rn");
             break;
         case 3:
-            self.navigationController?.pushRoute(path: "/login");
+            self.navigationController?.push(path: "/login");
             break;
         default:
-            self.navigationController?.pushRoute(viewControlller: MineViewController());
+            self.navigationController?.push(viewControlller: MineViewController());
             break;
         }
         return "";

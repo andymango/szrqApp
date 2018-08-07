@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029C58C55FE1476BA3D1DB87 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 092BA71314F0443BB0AEB4A4 /* EvilIcons.ttf */; };
+		47DF19B992BA4CAB8D0A6C42 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F80B9F0B67D8498FAA8CE28A /* MaterialIcons.ttf */; };
 		4D301978B995E22800F444EE /* Pods_szrqUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B51C0543624006CB934BBB /* Pods_szrqUITests.framework */; };
+		4F0FE2E45F4845F787117FF6 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64CCECB6635E4B40B26DA8A3 /* MaterialCommunityIcons.ttf */; };
+		52C8EB416F914CBC937DC771 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A4006EF5A1E4E9C9D2A025B /* Foundation.ttf */; };
+		668FB1A75C0A424F85F48E73 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 927C521577DB458B9D360583 /* Entypo.ttf */; };
 		864A686D1712865473C426EF /* Pods_szrq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB064C0689BA05D8B538671 /* Pods_szrq.framework */; };
 		9D4908992114247900DBB784 /* StyleVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4908982114247900DBB784 /* StyleVars.swift */; };
+		9DA459F9211947B90040E6AB /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA459F8211947B90040E6AB /* Environment.m */; };
 		9DDF9B43211292870011B4C2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF9B42211292860011B4C2 /* Router.swift */; };
 		9DDF9B49211292CC0011B4C2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF9B48211292CC0011B4C2 /* HomeViewController.swift */; };
 		9DDF9B4F211294A30011B4C2 /* AppViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF9B4E211294A30011B4C2 /* AppViewAdapter.swift */; };
@@ -24,7 +30,18 @@
 		9DFC9ACF2111B93200707B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DFC9ACD2111B93200707B3B /* LaunchScreen.storyboard */; };
 		9DFC9ADA2111B93200707B3B /* szrqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC9AD92111B93200707B3B /* szrqTests.swift */; };
 		9DFC9AE52111B93200707B3B /* szrqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFC9AE42111B93200707B3B /* szrqUITests.swift */; };
+		9DFFE6B421183802001BBC71 /* ip.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9DFFE6B321183802001BBC71 /* ip.txt */; };
+		9DFFE6B6211931C8001BBC71 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DFFE6B5211931C8001BBC71 /* Cache.swift */; };
+		A5B918AB103A4168B8315C72 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D39EFBF5FD2544DE9D03DC40 /* Feather.ttf */; };
+		B887E59570FF4393A302D995 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D8855268F1D4E2A93333BA6 /* FontAwesome5_Brands.ttf */; };
+		BDAF840F663047A89E2425BC /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06A6B4091164B4194CAAF8A /* SimpleLineIcons.ttf */; };
+		C8D313CC7DF54178A562B3B3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 777BE8D1D858494BB8D5C53F /* Zocial.ttf */; };
+		DFDAB577A95246B7BA135813 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E8F47340E474323B40AAB58 /* FontAwesome.ttf */; };
+		E11BC57B443A4322BCA895E0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437BFCFDD0D242DC854CABE8 /* Octicons.ttf */; };
 		ECACFE5A4F86F0C4984394A2 /* Pods_szrqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B859209014C5CCBEA37340D5 /* Pods_szrqTests.framework */; };
+		ECBA751FC3964E58B0D5CBEE /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFD832D4CBE4477690D033B1 /* Ionicons.ttf */; };
+		ED2C2D8B4A7F464AB4815D40 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 763DEE5CEB6746DD86A53EA5 /* FontAwesome5_Solid.ttf */; };
+		F26F1A3BA48B4245BCFB2C0D /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 909B6A0B77D34BD3ADF122BF /* FontAwesome5_Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +63,25 @@
 
 /* Begin PBXFileReference section */
 		01B173BBC5127C2DC9FFE016 /* Pods-szrqTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-szrqTests/Pods-szrqTests.release.xcconfig"; sourceTree = "<group>"; };
+		092BA71314F0443BB0AEB4A4 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		1462B0E2093148497E9DFF5D /* Pods-szrqTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-szrqTests/Pods-szrqTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D8855268F1D4E2A93333BA6 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		216EE07353F8AD6443ED3E16 /* Pods-szrqUITests.debugtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqUITests.debugtest.xcconfig"; path = "Pods/Target Support Files/Pods-szrqUITests/Pods-szrqUITests.debugtest.xcconfig"; sourceTree = "<group>"; };
+		437BFCFDD0D242DC854CABE8 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		43A552FC4977D77BBB1823D7 /* Pods-szrqUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-szrqUITests/Pods-szrqUITests.release.xcconfig"; sourceTree = "<group>"; };
 		474EACD45F0B46C7C03C1C32 /* Pods-szrq.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrq.release.xcconfig"; path = "Pods/Target Support Files/Pods-szrq/Pods-szrq.release.xcconfig"; sourceTree = "<group>"; };
 		486D72D54EE698D9C3CA08BB /* Pods-szrq.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrq.debug.xcconfig"; path = "Pods/Target Support Files/Pods-szrq/Pods-szrq.debug.xcconfig"; sourceTree = "<group>"; };
+		64CCECB6635E4B40B26DA8A3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		763DEE5CEB6746DD86A53EA5 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		777BE8D1D858494BB8D5C53F /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		7A4006EF5A1E4E9C9D2A025B /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		909B6A0B77D34BD3ADF122BF /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		927C521577DB458B9D360583 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		99F205749FEB031CC3C4E1C9 /* Pods-szrqTests.debugtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqTests.debugtest.xcconfig"; path = "Pods/Target Support Files/Pods-szrqTests/Pods-szrqTests.debugtest.xcconfig"; sourceTree = "<group>"; };
 		9D4908982114247900DBB784 /* StyleVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleVars.swift; sourceTree = "<group>"; };
+		9DA459F6211947B80040E6AB /* szrq-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "szrq-Bridging-Header.h"; sourceTree = "<group>"; };
+		9DA459F7211947B90040E6AB /* Environment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Environment.h; sourceTree = "<group>"; };
+		9DA459F8211947B90040E6AB /* Environment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Environment.m; sourceTree = "<group>"; };
 		9DDF9B42211292860011B4C2 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		9DDF9B48211292CC0011B4C2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9DDF9B4E211294A30011B4C2 /* AppViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewAdapter.swift; sourceTree = "<group>"; };
@@ -71,10 +102,18 @@
 		9DFC9AE02111B93200707B3B /* szrqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = szrqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DFC9AE42111B93200707B3B /* szrqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = szrqUITests.swift; sourceTree = "<group>"; };
 		9DFC9AE62111B93200707B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DFFE6B321183802001BBC71 /* ip.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ip.txt; sourceTree = "<group>"; };
+		9DFFE6B5211931C8001BBC71 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		9E8F47340E474323B40AAB58 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		A06A6B4091164B4194CAAF8A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		A4B51C0543624006CB934BBB /* Pods_szrqUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_szrqUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B859209014C5CCBEA37340D5 /* Pods_szrqTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_szrqTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEB064C0689BA05D8B538671 /* Pods_szrq.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_szrq.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF46CF26437B318C40CAB22C /* Pods-szrqUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrqUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-szrqUITests/Pods-szrqUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE5CF6B939C0B9A9B5338374 /* Pods-szrq.debugtest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-szrq.debugtest.xcconfig"; path = "Pods/Target Support Files/Pods-szrq/Pods-szrq.debugtest.xcconfig"; sourceTree = "<group>"; };
+		D39EFBF5FD2544DE9D03DC40 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		F80B9F0B67D8498FAA8CE28A /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		FFD832D4CBE4477690D033B1 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +144,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C04C78992D54C239E60EFC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				927C521577DB458B9D360583 /* Entypo.ttf */,
+				092BA71314F0443BB0AEB4A4 /* EvilIcons.ttf */,
+				D39EFBF5FD2544DE9D03DC40 /* Feather.ttf */,
+				9E8F47340E474323B40AAB58 /* FontAwesome.ttf */,
+				1D8855268F1D4E2A93333BA6 /* FontAwesome5_Brands.ttf */,
+				909B6A0B77D34BD3ADF122BF /* FontAwesome5_Regular.ttf */,
+				763DEE5CEB6746DD86A53EA5 /* FontAwesome5_Solid.ttf */,
+				7A4006EF5A1E4E9C9D2A025B /* Foundation.ttf */,
+				FFD832D4CBE4477690D033B1 /* Ionicons.ttf */,
+				64CCECB6635E4B40B26DA8A3 /* MaterialCommunityIcons.ttf */,
+				F80B9F0B67D8498FAA8CE28A /* MaterialIcons.ttf */,
+				437BFCFDD0D242DC854CABE8 /* Octicons.ttf */,
+				A06A6B4091164B4194CAAF8A /* SimpleLineIcons.ttf */,
+				777BE8D1D858494BB8D5C53F /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9D4908972113346E00DBB784 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				9DFFE6B22117FA91001BBC71 /* RN.bundle */,
 				9DFC9ACB2111B93200707B3B /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -125,8 +186,19 @@
 			children = (
 				9DDF9B4E211294A30011B4C2 /* AppViewAdapter.swift */,
 				9D4908982114247900DBB784 /* StyleVars.swift */,
+				9DFFE6B321183802001BBC71 /* ip.txt */,
+				9DA459F7211947B90040E6AB /* Environment.h */,
+				9DA459F8211947B90040E6AB /* Environment.m */,
+				9DA459F6211947B80040E6AB /* szrq-Bridging-Header.h */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		9DA459FA2119BA860040E6AB /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libraries;
 			sourceTree = "<group>";
 		};
 		9DDF9B41211292450011B4C2 /* Services */ = {
@@ -158,6 +230,7 @@
 		9DDF9B50211296250011B4C2 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9DFFE6B5211931C8001BBC71 /* Cache.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -191,11 +264,13 @@
 			isa = PBXGroup;
 			children = (
 				9DFC9AC32111B93000707B3B /* szrq */,
+				9DA459FA2119BA860040E6AB /* Libraries */,
 				9DFC9AD82111B93200707B3B /* szrqTests */,
 				9DFC9AE32111B93200707B3B /* szrqUITests */,
 				9DFC9AC22111B93000707B3B /* Products */,
 				A4A58EF5C5C28F1B00110546 /* Pods */,
 				E042FD0582E9D7FBAF95E99C /* Frameworks */,
+				7C04C78992D54C239E60EFC6 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,6 +321,13 @@
 			path = szrqUITests;
 			sourceTree = "<group>";
 		};
+		9DFFE6B22117FA91001BBC71 /* RN.bundle */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RN.bundle;
+			sourceTree = "<group>";
+		};
 		A4A58EF5C5C28F1B00110546 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +337,9 @@
 				01B173BBC5127C2DC9FFE016 /* Pods-szrqTests.release.xcconfig */,
 				BF46CF26437B318C40CAB22C /* Pods-szrqUITests.debug.xcconfig */,
 				43A552FC4977D77BBB1823D7 /* Pods-szrqUITests.release.xcconfig */,
+				CE5CF6B939C0B9A9B5338374 /* Pods-szrq.debugtest.xcconfig */,
+				99F205749FEB031CC3C4E1C9 /* Pods-szrqTests.debugtest.xcconfig */,
+				216EE07353F8AD6443ED3E16 /* Pods-szrqUITests.debugtest.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -335,12 +420,13 @@
 		9DFC9AB92111B93000707B3B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
-				LastUpgradeCheck = 0940;
+				LastSwiftUpdateCheck = 940;
+				LastUpgradeCheck = 940;
 				ORGANIZATIONNAME = dxc;
 				TargetAttributes = {
 					9DFC9AC02111B93000707B3B = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 940;
 					};
 					9DFC9AD42111B93200707B3B = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -378,8 +464,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DFC9ACF2111B93200707B3B /* LaunchScreen.storyboard in Resources */,
+				9DFFE6B421183802001BBC71 /* ip.txt in Resources */,
 				9DFC9ACC2111B93200707B3B /* Assets.xcassets in Resources */,
 				9DFC9ACA2111B93000707B3B /* Main.storyboard in Resources */,
+				668FB1A75C0A424F85F48E73 /* Entypo.ttf in Resources */,
+				029C58C55FE1476BA3D1DB87 /* EvilIcons.ttf in Resources */,
+				A5B918AB103A4168B8315C72 /* Feather.ttf in Resources */,
+				DFDAB577A95246B7BA135813 /* FontAwesome.ttf in Resources */,
+				B887E59570FF4393A302D995 /* FontAwesome5_Brands.ttf in Resources */,
+				F26F1A3BA48B4245BCFB2C0D /* FontAwesome5_Regular.ttf in Resources */,
+				ED2C2D8B4A7F464AB4815D40 /* FontAwesome5_Solid.ttf in Resources */,
+				52C8EB416F914CBC937DC771 /* Foundation.ttf in Resources */,
+				ECBA751FC3964E58B0D5CBEE /* Ionicons.ttf in Resources */,
+				4F0FE2E45F4845F787117FF6 /* MaterialCommunityIcons.ttf in Resources */,
+				47DF19B992BA4CAB8D0A6C42 /* MaterialIcons.ttf in Resources */,
+				E11BC57B443A4322BCA895E0 /* Octicons.ttf in Resources */,
+				BDAF840F663047A89E2425BC /* SimpleLineIcons.ttf in Resources */,
+				C8D313CC7DF54178A562B3B3 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,9 +589,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DDF9B5221129A6E0011B4C2 /* LoginViewController.swift in Sources */,
+				9DA459F9211947B90040E6AB /* Environment.m in Sources */,
 				9DDF9B49211292CC0011B4C2 /* HomeViewController.swift in Sources */,
 				9DDF9B612112A8090011B4C2 /* MineViewController.swift in Sources */,
 				9DDF9B4F211294A30011B4C2 /* AppViewAdapter.swift in Sources */,
+				9DFFE6B6211931C8001BBC71 /* Cache.swift in Sources */,
 				9DDF9B43211292870011B4C2 /* Router.swift in Sources */,
 				9DDF9B5F2112A7DB0011B4C2 /* BaseLoginViewController.swift in Sources */,
 				9DDF9B5D2112A7C60011B4C2 /* BaseViewController.swift in Sources */,
@@ -555,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				AppEnvName = "深圳燃气-debug";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -615,6 +719,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				AppEnvName = "深圳燃气";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -650,6 +755,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=3";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -671,6 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV8Q945J42;
 				INFOPLIST_FILE = szrq/Info.plist;
@@ -680,6 +787,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-74464489.szrq";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "szrq/Config/szrq-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -691,6 +800,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JV8Q945J42;
 				INFOPLIST_FILE = szrq/Info.plist;
@@ -700,6 +810,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-74464489.szrq";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "szrq/Config/szrq-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -791,6 +902,133 @@
 			};
 			name = Release;
 		};
+		9DFFE6BB211938C3001BBC71 /* DebugTest */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				AppEnvName = "深圳燃气-test";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=2",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DebugTest;
+		};
+		9DFFE6BC211938C3001BBC71 /* DebugTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE5CF6B939C0B9A9B5338374 /* Pods-szrq.debugtest.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV8Q945J42;
+				INFOPLIST_FILE = szrq/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-74464489.szrq";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "szrq/Config/szrq-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DebugTest;
+		};
+		9DFFE6BD211938C3001BBC71 /* DebugTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99F205749FEB031CC3C4E1C9 /* Pods-szrqTests.debugtest.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV8Q945J42;
+				INFOPLIST_FILE = szrqTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-74464489.szrqTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/szrq.app/szrq";
+			};
+			name = DebugTest;
+		};
+		9DFFE6BE211938C3001BBC71 /* DebugTest */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 216EE07353F8AD6443ED3E16 /* Pods-szrqUITests.debugtest.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JV8Q945J42;
+				INFOPLIST_FILE = szrqUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-74464489.szrqUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = szrq;
+			};
+			name = DebugTest;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -798,6 +1036,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DFC9AE72111B93200707B3B /* Debug */,
+				9DFFE6BB211938C3001BBC71 /* DebugTest */,
 				9DFC9AE82111B93200707B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -807,6 +1046,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DFC9AEA2111B93200707B3B /* Debug */,
+				9DFFE6BC211938C3001BBC71 /* DebugTest */,
 				9DFC9AEB2111B93200707B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -816,6 +1056,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DFC9AED2111B93200707B3B /* Debug */,
+				9DFFE6BD211938C3001BBC71 /* DebugTest */,
 				9DFC9AEE2111B93200707B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -825,6 +1066,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DFC9AF02111B93200707B3B /* Debug */,
+				9DFFE6BE211938C3001BBC71 /* DebugTest */,
 				9DFC9AF12111B93200707B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

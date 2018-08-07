@@ -9,6 +9,12 @@
 import UIKit
 
 class HomeViewController: BaseViewController {
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated);
+        
+        self.navigationItem.title = "首页";
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -59,7 +65,9 @@ class HomeViewController: BaseViewController {
         btn.setTitleColor(UIColor.blue, for: UIControlState.normal);
         btn.setTitleColor(UIColor.white, for: UIControlState.highlighted);
         btn.backgroundColor = UIColor.brown;
-        
+        btn.layer.masksToBounds = true;
+        btn.layer.cornerRadius = 5;
+//        targetViewController(forAction: <#T##Selector#>, sender: <#T##Any?#>)
         //事件绑定
 //        btn.addTarget(self, action: Selector("clickEvent:"), for: UIControlEvents.touchUpInside)
 //        btn.addTarget(self, action: "clickEvent:", for: UIControlEvents.touchUpInside)
@@ -92,13 +100,13 @@ class HomeViewController: BaseViewController {
         case 2:
             var navConfig = NavConfig();
             navConfig.animated = false;
-            self.navigationController?.pushRoute(path: "/rn", navConfig: navConfig)
+            self.navigationController?.push(path: "/rn", navConfig: navConfig)
             break;
         case 3:
-            self.navigationController?.pushRoute(path: "/login");
+            self.navigationController?.push(path: "/login");
             break;
         default:
-            self.navigationController?.pushRoute(viewControlller: MineViewController());
+            self.navigationController?.push(viewControlller: MineViewController());
             break;
         }
         return "";

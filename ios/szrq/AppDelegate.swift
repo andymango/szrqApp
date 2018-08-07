@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import React
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     //launch完成
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let router = Router.init(rootViewController: HomeViewController());
+        let router = Router.init(rootViewController: RNViewController());
+    
+        #if DEBUG
+            print("this is debug model")
+        #endif
         
         window? = UIWindow(frame: UIScreen.main.bounds);
         window?.backgroundColor = UIColor.yellow;

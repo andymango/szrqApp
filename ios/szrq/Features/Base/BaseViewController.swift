@@ -9,7 +9,9 @@
 import UIKit
 
 class BaseViewController: UIViewController {
-
+    
+    var path: String?;//当前页面对应的path
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

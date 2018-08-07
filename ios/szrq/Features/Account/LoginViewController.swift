@@ -8,16 +8,30 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
+//    @IBOutlet weak var textField: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        textField.delegate = self
     }
+    
+//    //设置返回按钮的点击事件
+//    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+////        textField.resignFirstResponder()           //关闭键盘
+//        print("点击了返回")
+//        return true
+//    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated);
+        
+//        self.navigationController?.isNavigationBarHidden = false;//是否隐藏导航栏
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false;
         self.navigationItem.prompt = "正在加载数据";
+        
+        self.navigationItem.title = "登录";
+ 
         //        let timer = Timer(timeInterval: <#T##TimeInterval#>, invocation: <#T##NSInvocation#>, repeats: <#T##Bool#>)
         //        RunLoop.main.add(timer, forMode: RunLoopMode.commonModes)
         //        self.navigationController.trans

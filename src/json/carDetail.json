@@ -1,0 +1,184 @@
+{
+	"code": 1,
+	"message": "成功!",
+	"object": {
+		"groupPhotos": [
+			{
+				"groupName": "车辆外观",
+				"groupType": 0,
+				"groupPhoto": [
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c.jpg",
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/27304ae1-e5a7-4ff8-bfe2-6ef07a6ea208.jpg"
+				]
+			},
+			{
+				"groupName": "中控座椅",
+				"groupType": 1,
+				"groupPhoto": [
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c.jpg",
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/27304ae1-e5a7-4ff8-bfe2-6ef07a6ea208.jpg"
+				]
+			},
+			{
+				"groupName": "发动机舱",
+				"groupType": 2,
+				"groupPhoto": [
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c.jpg",
+					"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/27304ae1-e5a7-4ff8-bfe2-6ef07a6ea208.jpg"
+				]
+			}
+		],
+		"photo": [
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c.jpg",
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/27304ae1-e5a7-4ff8-bfe2-6ef07a6ea208.jpg",
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/b62a32c0-316c-4c61-8b7e-0bf1689de2ce.jpg",
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/44eefe47-5963-4e1d-9a20-2574b85f3fdc.jpg",
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/804b2ff9-7832-4718-acc6-a5cf70f429d6.jpg",
+			"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c0b819f4-3804-4232-b31d-e7727e7224aa.jpg"
+		],
+		"carLabel": [
+			{
+				"labelName": "可担保交易",
+				"labelTextColor": "green",
+				"labelBorderColor": "green"
+			},
+			{
+				"labelName": "准新车",
+				"labelTextColor": "orange",
+				"labelBorderColor": "orange"
+			},
+			{
+				"labelName": "一手好车",
+				"labelTextColor": "orange",
+				"labelBorderColor": "orange"
+			},
+			{
+				"labelName": "4S维保记录",
+				"labelTextColor": "pink",
+				"labelBorderColor": "pink"
+			},
+			{
+				"labelName": "里程少",
+				"labelTextColor": "orange",
+				"labelBorderColor": "orange"
+			}
+		],
+		"fullName": "宝马5系 2018款 528Li 上市特别版",
+		"carOriginNo": "JL-C85156",
+		"shelfTime": "2018年2月2日",
+		"firstRegDate": 1489913040000,
+		"kmNum": 30000,
+		"styleId": 80004126,
+		"price": 3000000.0,
+		"originCity": 180,
+		"originCityName": "吉林市",
+		"originProvince": 14,
+		"originProvinceName": "吉林",
+		"newCarPrice": 449900.0,
+		"wholeSalePrice": "30万",
+		"sellPrice": 350000,
+		"retailPrice": "35万",
+		"commission": "5000元",
+		"basicPrice": "34万",
+		"carEmissions": "2.0",
+		"gearbox": "自动",
+		"transferNum": 0,
+		"emissionType": 500,
+		"carID": 85156,
+		"colorName": "紫色",
+		"saleCheckStatus": 0,
+		"saleCheckRemark": "通过审核",
+		"isAllowOperate": 1,
+		"sharePhotos": "/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c.jpg",
+		"shareTitle": "宝马5系2018款 528Li 上市特别版,只要300.0万元,手慢无哦~",
+		"shareDesc": "我在备胎好车发现一辆宝马，行驶3万公里，只卖300.0万元，良心保证绝对棒，大家该出手时就出手啊！",
+		"shareUrl": "http://192.168.100.142:8012/trade/car_detail?id=85156",
+		"isPersonal": false,
+		"isSaleAgain": false,
+		"isThirdParty": false,
+		"offSaleRemark": null,
+		"carOffShelfType": null,
+		"isDelete": 0,
+		"isMoreThanLimit": 0,
+		"custID": 1101,
+		"personLogo": null,
+		"saleManID": 51290,
+		"saleManName": "余世淋余世",
+		"saleManMobile": "18702790698",
+		"saleManRankID": 2,
+		"address": "浙江爱车巴巴网络科技有限公司",
+		"isAttention": 1,
+		"specialtyConfig": [
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/dsxh.png",
+				"desc": "定速巡航"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/cqn.png",
+				"desc": "侧气囊/帘"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/dzwd.png",
+				"desc": "电子稳定"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/tyjc.png",
+				"desc": "胎压监测"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/dcld.png",
+				"desc": "倒车雷达"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/hdbp.png",
+				"desc": "换挡拨片"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/ddzy.png",
+				"desc": "电动座椅"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/zyjr.png",
+				"desc": "座椅加热"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/lydh.png",
+				"desc": "蓝牙电话"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/gps.png",
+				"desc": "GPS导航"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/sqdd.png",
+				"desc": "氙气大灯"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/zddd.png",
+				"desc": "自动大灯"
+			},
+			{
+				"photo": "http://192.168.100.142/ak/common/img/lightspot/zdkt.png",
+				"desc": "自动空调"
+			}
+		],
+		"isRefresh": 1,
+		"privateCarID": 85157,
+		"styleID": 52,
+		"isWholesale": 1,
+		"isBrokers": 1,
+		"carDesc": "爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。爱买买 不买滚。",
+		"voice": "http://cdnpubimg.cheok.com/PUBLIC/CAR_INTRODUCE/2018-03-21/439c392c-b5c1-4362-b186-df416edced0d.m4a",
+		"voiceType": 1,
+		"voiceTime": 45,
+		"isRed": 0,
+		"isApplyGuarantee": 1,
+		"isShowInquiry": 1,
+		"isShowCollect": 1,
+		"isShowShare": 1
+	},
+	"map": {
+		"shareInfo": "{\"desc\":\"我在备胎好车发现一辆宝马，行驶3万公里，只卖300.0万元，良心保证绝对棒，大家该出手时就出手啊！\",\"img\":\"http://192.168.100.142/PUBLIC/CAR_IMAGE/2018-03-19/c9c5e2f9-3db3-4eae-bad6-f9f1b6faf88c-100.jpg\",\"title\":\"宝马5系2018款 528Li 上市特别版,只要300.0万元,手慢无哦~\",\"url\":\"http://192.168.100.142:8012/trade/car_detail?id=85156&shareCode=eyJjdXN0SWQiOjUxMjkwLCJkZXZpY2VDb2RlIjoiOTRhMDdlOGE0YmRiYmE0MyIsInNvdXJjZSI6ImNhckRldGFpbCJ9\"}"
+	},
+	"handelEntity": null
+}

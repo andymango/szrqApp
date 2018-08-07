@@ -1,0 +1,9 @@
+ {
+    "code": 1,
+    "message": "成功!",
+    "object": {
+        "activityStatus": 1,
+        "activityHomeUrl":"http://sssksjd.com"
+    },
+    "map": {}
+}
