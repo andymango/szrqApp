@@ -3,14 +3,15 @@ import GConfig from '../config';
 // import networkModule from "../libs/nativeBridge/networkModule";
 import Util from "../libs/utils";
 import qs from 'qs';
+import systemService from '@/services/system'
+import userService from '@/services/user'
 
 const hostPrefix = GConfig.API_PREFIX || '';
+Axios.defaults.headers.common['version'] = GConfig.appVersion;
 
-// Axios.defaults.headers.common['AccessToken'] = '3d55682dfdcf4315efdcdb2c4e07b4dd'
-// Axios.defaults.headers.common['deviceToken'] = 'abc'
-// Axios.defaults.headers.common['version'] = GConfig.version;
-
-export default function io(config) {
+export default async function io(config) {
+	Axios.defaults.headers.common['deviceCode'] = await systemService.getDeviceCode();
+	Axios.defaults.headers.common['accessToken'] = await userService.getAccessToken();
 	// 删除空字段
 	if (config.data) {
 		for (let key in config.data) {
@@ -57,7 +58,7 @@ export default function io(config) {
 			reject(errorReturn);
 		})
 	}
-	
+
 	return promise.then((result) => {
 		result = Util.parseData(result);
 

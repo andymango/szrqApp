@@ -13,6 +13,6 @@ export default class Preload extends Component {
 	}
 
 	render() {
-		return <View>登录页</View>;
+		return <View>找回密码</View>;
 	}
 }

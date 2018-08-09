@@ -143,23 +143,44 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Base64/Base64.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CodePush/CodePush.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWT/JWT.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNDeviceInfo/RNDeviceInfo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/glog/glog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
 fi
 if [[ "$CONFIGURATION" == "DebugTest" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Base64/Base64.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CodePush/CodePush.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWT/JWT.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNDeviceInfo/RNDeviceInfo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/glog/glog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Base64/Base64.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/CodePush/CodePush.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Folly/folly.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/JWT/JWT.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNDeviceInfo/RNDeviceInfo.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/React/React.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/glog/glog.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/yoga/yoga.framework"
 fi

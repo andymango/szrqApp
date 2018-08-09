@@ -41,7 +41,6 @@ export default class App extends React.Component {
 				networkActivityIndicatorVisible={this.state.statusBar.networkActivityIndicatorVisible}
 				showHideTransition={this.state.statusBar.showHideTransition}
 			/>
-			<Text style={{backgroundColor: 'red'}}>fff</Text>
         	<RootContainer />
 		</View>
     //   </Provider>

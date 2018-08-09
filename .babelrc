@@ -15,6 +15,7 @@
 				"views":"./src/views"
 			},
 			"extensions": [".js", ".ios.js", ".android.js"]
-		}]
+		}],
+		["import", { "libraryName": "antd-mobile-rn" }]
 	]
 }

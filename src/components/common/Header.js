@@ -94,13 +94,13 @@ const styles = EStyleSheet.create({
 		color: '$red'
 	},
 	headerbox: {
-		...ifIphoneX({
-			paddingTop: 44
-		}, {
-			paddingTop: 20
-		}, {
-			paddingTop: 0
-		}),
+		// ...ifIphoneX({
+		// 	paddingTop: 44
+		// }, {
+		// 	paddingTop: 20
+		// }, {
+		// 	paddingTop: 0
+		// }),
 		borderBottomWidth: 1,
 		borderBottomColor: '$cee',
 		width: '100%'

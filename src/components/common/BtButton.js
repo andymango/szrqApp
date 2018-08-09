@@ -20,24 +20,15 @@ export default class BtButton extends Component {
 		super(props)
 	}
 
+	static propType = {
+		children: PropTypes.any.isRequired
+	};
+
 	render() {
-		return Platform.OS === 'ios' ? (
-			<TouchableHighlight {...this.props}
-													activeOpacity={0.7}>
+		return
+			<View>
 				{this.props.children}
-				</TouchableHighlight>
-		) : (
-				<TouchableNativeFeedback
-					onPress={this.props.onPress}
-				>
-					<View {...this.props}>
-						{this.props.children}
-					</View>
-				</TouchableNativeFeedback>
-		)
+			</View>
+
 	}
 }
-
-BtButton.propType = {
-	children: PropTypes.any.isRequired
-};

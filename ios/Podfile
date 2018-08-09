@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '9.4.1'
 
 target 'szrq' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -9,14 +9,22 @@ target 'szrq' do
 	# 'node_modules'目录一般位于根目录中
 	# 但是如果你的结构不同，那你就要根据实际路径修改下面的`:path`
 	pod 'React', :path => '../node_modules/react-native', :subspecs => [
-		'Core',
-		'CxxBridge', # 如果RN版本 >= 0.47则加入此行
-		'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
-		'RCTText',
-		'RCTNetwork',
-        'RCTLinkingIOS',#外部链接
-		'RCTWebSocket', # 调试功能需要此模块
-		'RCTAnimation', # FlatList和原生动画功能需要此模块
+        'Core',
+        'CxxBridge', # 如果RN版本 >= 0.47则加入此行
+        'DevSupport', # 如果RN版本 >= 0.43，则需要加入此行才能开启开发者菜单
+        'RCTText',
+        'RCTNetwork',
+        'RCTCameraRoll',
+        'RCTBlob',
+        'RCTActionSheet',#屏幕截图
+        'RCTSettings',
+        'RCTVibration',#不知道干嘛的
+        'RCTGeolocation',
+        'RCTImage', #图片
+        'RCTPushNotification',
+        'RCTLinkingIOS', # 外部链接
+        'RCTWebSocket', # 调试功能需要此模块
+        'RCTAnimation', # FlatList和原生动画功能需要此模块
 		# 在这里继续添加你所需要的其他RN模块
 	  ]
 	  # 如果你的RN版本 >= 0.42.0，则加入下面这行
@@ -27,11 +35,15 @@ target 'szrq' do
 	  pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
 	  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+  
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
   pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
 
   target 'szrqTests' do
     inherit! :search_paths

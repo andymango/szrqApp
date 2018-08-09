@@ -13,7 +13,6 @@
 		4F0FE2E45F4845F787117FF6 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64CCECB6635E4B40B26DA8A3 /* MaterialCommunityIcons.ttf */; };
 		52C8EB416F914CBC937DC771 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A4006EF5A1E4E9C9D2A025B /* Foundation.ttf */; };
 		668FB1A75C0A424F85F48E73 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 927C521577DB458B9D360583 /* Entypo.ttf */; };
-		864A686D1712865473C426EF /* Pods_szrq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB064C0689BA05D8B538671 /* Pods_szrq.framework */; };
 		9D4908992114247900DBB784 /* StyleVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4908982114247900DBB784 /* StyleVars.swift */; };
 		9DA459F9211947B90040E6AB /* Environment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DA459F8211947B90040E6AB /* Environment.m */; };
 		9DDF9B43211292870011B4C2 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDF9B42211292860011B4C2 /* Router.swift */; };
@@ -36,6 +35,7 @@
 		B887E59570FF4393A302D995 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D8855268F1D4E2A93333BA6 /* FontAwesome5_Brands.ttf */; };
 		BDAF840F663047A89E2425BC /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06A6B4091164B4194CAAF8A /* SimpleLineIcons.ttf */; };
 		C8D313CC7DF54178A562B3B3 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 777BE8D1D858494BB8D5C53F /* Zocial.ttf */; };
+		CD92375D5EF9978856BD89B3 /* Pods_szrq.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB064C0689BA05D8B538671 /* Pods_szrq.framework */; };
 		DFDAB577A95246B7BA135813 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9E8F47340E474323B40AAB58 /* FontAwesome.ttf */; };
 		E11BC57B443A4322BCA895E0 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 437BFCFDD0D242DC854CABE8 /* Octicons.ttf */; };
 		ECACFE5A4F86F0C4984394A2 /* Pods_szrqTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B859209014C5CCBEA37340D5 /* Pods_szrqTests.framework */; };
@@ -121,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				864A686D1712865473C426EF /* Pods_szrq.framework in Frameworks */,
+				CD92375D5EF9978856BD89B3 /* Pods_szrq.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,17 +526,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-szrq/Pods-szrq-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BVLinearGradient/BVLinearGradient.framework",
+				"${BUILT_PRODUCTS_DIR}/Base64/Base64.framework",
+				"${BUILT_PRODUCTS_DIR}/CodePush/CodePush.framework",
 				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
 				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/JWT/JWT.framework",
+				"${BUILT_PRODUCTS_DIR}/RNDeviceInfo/RNDeviceInfo.framework",
+				"${BUILT_PRODUCTS_DIR}/RNVectorIcons/RNVectorIcons.framework",
 				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/SSZipArchive/SSZipArchive.framework",
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
 				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BVLinearGradient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Base64.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodePush.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JWT.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNDeviceInfo.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNVectorIcons.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSZipArchive.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
 			);

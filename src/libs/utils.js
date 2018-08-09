@@ -22,6 +22,38 @@ export default {
 	isIos: Platform.OS === 'ios' ? true : false,
 	isAndroid: Platform.OS === 'android' ? true : false,
 
+	REGEXP: {
+		/**
+		 * 手机。
+		 */
+		PHONE: /^(\+\d+)?1[345789]\d{9}$/,///^(((13[0-9]{1})|(15[0-9]{1})|(14[0-9]{1})|(18[0-9]{1}))+\d{8})$/,
+
+		/**
+		 * 邮编。
+		 */
+		ZIPCODE: /^[1-9][0-9]{5}$/,
+
+		/**
+		 * 邮箱。
+		 */
+		EMAIL: /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,
+
+		/**
+		 * 日期。
+		 */
+		DATE: /^(0?[1-9]|1[0-2])-(0?[1-9]|[1-2][0-9]|3[0-1])$/,
+
+		/**
+		 * 身份证。
+		 */
+		IDCARD: /(^\d{18}$)|(^\d{15}$)|(^\d{17}(\d|X|x)$)/,
+
+		/**
+		 * VIN码。
+		 */
+		VINCODE: /(?!^\d+$)(?!^[a-zA-Z]+$)[0-9a-zA-Z]{17}/
+	},
+
 	type(obj) {
 		let class2type = {};
 		let toString = class2type.toString;
@@ -501,38 +533,6 @@ export default {
 		return throttle(fn, delay, mustRunDelay, true);
 	},
 
-	REGEXP = {
-		/**
-		 * 手机。
-		 */
-		PHONE: /^(\+\d+)?1[345789]\d{9}$/,///^(((13[0-9]{1})|(15[0-9]{1})|(14[0-9]{1})|(18[0-9]{1}))+\d{8})$/,
-
-		/**
-		 * 邮编。
-		 */
-		ZIPCODE: /^[1-9][0-9]{5}$/,
-
-		/**
-		 * 邮箱。
-		 */
-		EMAIL: /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/,
-
-		/**
-		 * 日期。
-		 */
-		DATE: /^(0?[1-9]|1[0-2])-(0?[1-9]|[1-2][0-9]|3[0-1])$/,
-
-		/**
-		 * 身份证。
-		 */
-		IDCARD: /(^\d{18}$)|(^\d{15}$)|(^\d{17}(\d|X|x)$)/,
-
-		/**
-		 * VIN码。
-		 */
-		VINCODE: /(?!^\d+$)(?!^[a-zA-Z]+$)[0-9a-zA-Z]{17}/
-	},
-
 	/**
 	 * 字符串转成json对象
 	 * @param  {String} str     要转化的字符串
@@ -569,24 +569,24 @@ export default {
 		)
 	},
 
-	/**
-	 * 根据是否是iPhoneX返回不同的样式
-	 * @param iphoneXStyle
-	 * @param iosStyle
-	 * @param androidStyle
-	 * @returns {*}
-	 */
+	// /**
+	//  * 根据是否是iPhoneX返回不同的样式
+	//  * @param iphoneXStyle
+	//  * @param iosStyle
+	//  * @param androidStyle
+	//  * @returns {*}
+	//  */
 
-	ifIphoneX(iphoneXStyle, iosStyle, androidStyle) {
-		if (isIphoneX()) {
-			return iphoneXStyle;
-		} else if (Platform.OS === 'ios') {
-			return iosStyle
-		} else {
-			if (androidStyle) return androidStyle;
-			return iosStyle
-		}
-	},
+	// ifIphoneX(iphoneXStyle, iosStyle, androidStyle) {
+	// 	if (isIphoneX()) {
+	// 		return iphoneXStyle;
+	// 	} else if (Platform.OS === 'ios') {
+	// 		return iosStyle
+	// 	} else {
+	// 		if (androidStyle) return androidStyle;
+	// 		return iosStyle
+	// 	}
+	// },
 
 	/**
 	 *获取react-native-element元素的宽度和高度等信息

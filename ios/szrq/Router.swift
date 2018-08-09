@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import React
 
 //导航配置
 public struct NavConfig {
@@ -84,8 +83,8 @@ class Router: UINavigationController {
     
     //设置全局导航栏的样式
     func setNavBarStyle(){
-        UINavigationBar.appearance().tintColor = UIColor.red;//导航栏字体颜色
-        UINavigationBar.appearance().isTranslucent = false;//设置不透明，这样布局会从导航栏以下开始计算
+//        UINavigationBar.appearance().tintColor = UIColor.red;//导航栏字体颜色
+//        UINavigationBar.appearance().isTranslucent = false;//设置不透明，这样布局会从导航栏以下开始计算
       
 //        self.navigationBar.titleTextAttributes = [NSAttributedStringKey.font:UIFont.systemFont(ofSize: 30.0), NSAttributedStringKey.foregroundColor: UIColor.green];
     }

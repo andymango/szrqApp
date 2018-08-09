@@ -19,6 +19,8 @@ let DEFAULT_CONFIG = {
 
 	appVersion: '1.0.0',
 
+	schemeUrl: 'szrq://www.szrq.com',
+
 	/**
 	 * 应用跳转前缀
 	 * @type {String}

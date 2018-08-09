@@ -1,100 +1,55 @@
 // import React, {Component} from 'react';
 import GConfig from '@/config';
-import { 
-	StackNavigator,
-	// TabNavigator,
-	// TabBarBottom,
+import {
+	createSwitchNavigator,
+	createStackNavigator,
+	// createMaterialTopTabNavigator,
+	// createBottomTabNavigator,
 	addNavigationHelpers
 } from 'react-navigation';
 
-import { TabBar } from 'antd-mobile'
-// import {
-// 	View,
-// 	StatusBar,
-// 	Platform,
-// 	Text,
-// 	NativeModules,
-// 	NativeEventEmitter
-//   } from 'react-native'
-
-// export default class App extends React.Component {
-//   componentDidMount() {
-//   }
-
-//   render() {
-//     return (
-// 	//   <Provider store={store}>
-// 		<View style={{ flex: 1, backgroundColor: 'green' }}>
-// 		<Text>router</Text>
-// 		</View>
-//     //   </Provider>
-//     )
-//   }
-// }
-
-// const TransitionConfiguration = () => ({
-// 	screenInterpolator: (sceneProps) => {
-// 	  const { scene } = sceneProps;
-// 	  const { route } = scene;
-// 	  const params = route.params || {};
-// 	  const transition = params.transition || 'forHorizontal';
-// 	  return CardStackStyleInterpolator[transition](sceneProps);
-// 	},
-//   })
-
-// //首页的tab控制器
-// const tabConfigs = {
-// 	home: {
-// 		screen: require('@/views/Home'),
-// 		path: "/main/home"
-// 	},
-// 	mine: {
-// 		screen: require('@/views/Mine'),
-// 		path: "/main/mine"
-// 	}
-// };
-
-// const Tab = TabNavigator(tabConfigs, 
-// 	{
-// 		tabBarComponent: TabBarBottom,
-// 		tabBarPosition: 'bottom',
-// 		swipeEnabled:false,
-// 		animationEnabled:false,
-// 		lazy:true,
-// 		tabBarOptions:{
-// 			activeTintColor:'#06c1ae',
-// 			inactiveTintColor:'#979797',
-// 			style:{backgroundColor:'#ffffff',},
-// 			labelStyle: {
-// 				fontSize: 20, // 文字大小
-// 			},
-// 		}
-// 	}
-// );
+import WelcomePageScreen from  '@/views/WelcomePage';
 import MainScreen from  '@/views/Main';
-import LoginScreen from '@/views/Login';
+import LoginScreen from '@/views/Account/Login';
 
-const routeConfigs = {
-	main: {
-		screen: MainScreen,//require('@/views/Main'),  import ( /* webpackChunkName: "common" */ '@/views/common/index')
-		path: "/main"
-	},
-	login: {
-		screen: LoginScreen,//require('@/views/Login'),
-		path: "/login"
+let mainNavigator = createStackNavigator({
+	index: {
+		screen: MainScreen,
+		path: "/index"
 	}
-}
-export default StackNavigator(routeConfigs, {
-	initialRouteName: 'main',
+}, {
+	initialRouteName: 'index',
 	// initialRouteParams: {},
-    navigationOptions: {
+    navigationOptions: {//默认导航选项
       	headerBackTitle: '返回',
       	headerTruncatedBackTitle: '返回',
       	gesturesEnabled: true //是否支持滑动返回手势，iOS默认支持，安卓默认关闭
+	}});
+
+let rootNavigator = createSwitchNavigator({
+		welcomePage: {
+			screen: WelcomePageScreen,
+			path: "/welcomePage"
+		},
+		main: {
+			screen: mainNavigator,
+			path: "/"
+		},
+		login: {
+			screen: LoginScreen,//require('@/views/Login'),
+			path: "/login"
+		}
+	}, {
+	initialRouteName: 'welcomePage',
+    // headerMode: 'none',
+	// initialRouteParams: {},
+    navigationOptions: {//默认导航选项
+    	header: null,
+      	gesturesEnabled: false //是否支持滑动返回手势，iOS默认支持，安卓默认关闭
     },
     // transitionConfig: TransitionConfiguration
 })
-
+export default rootNavigator;
 
 // /**
 //  * 获取想要的routers
