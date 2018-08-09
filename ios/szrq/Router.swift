@@ -17,6 +17,7 @@ public struct NavConfig {
 extension UINavigationController{
     //重置导航控制器
     func reset() -> Void {
+        self.isNavigationBarHidden = true;
         self.interactivePopGestureRecognizer?.isEnabled = true;//默认开启右滑
     }
     

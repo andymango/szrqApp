@@ -16,11 +16,21 @@ let mainNavigator = createStackNavigator({
 	index: {
 		screen: MainScreen,
 		path: "/index"
+	},
+	login: {
+		screen: LoginScreen,//require('@/views/Login'),
+		path: "/login",
+		navigationOptions: {
+			mode: 'modal'
+		}
 	}
 }, {
+	resetOnBlur: true,//切换离开屏幕时，重置所有嵌套导航器的状态。默认为true
 	initialRouteName: 'index',
 	// initialRouteParams: {},
-    navigationOptions: {//默认导航选项
+	navigationOptions: {//默认导航选项
+    	// header: null,
+		// title: "标题",
       	headerBackTitle: '返回',
       	headerTruncatedBackTitle: '返回',
       	gesturesEnabled: true //是否支持滑动返回手势，iOS默认支持，安卓默认关闭
@@ -29,7 +39,10 @@ let mainNavigator = createStackNavigator({
 let rootNavigator = createSwitchNavigator({
 		welcomePage: {
 			screen: WelcomePageScreen,
-			path: "/welcomePage"
+			path: "/welcomePage",
+			navigationOptions: {//默认导航选项
+				title: "啥啥啥",
+			}
 		},
 		main: {
 			screen: mainNavigator,
@@ -40,14 +53,7 @@ let rootNavigator = createSwitchNavigator({
 			path: "/login"
 		}
 	}, {
-	initialRouteName: 'welcomePage',
-    // headerMode: 'none',
-	// initialRouteParams: {},
-    navigationOptions: {//默认导航选项
-    	header: null,
-      	gesturesEnabled: false //是否支持滑动返回手势，iOS默认支持，安卓默认关闭
-    },
-    // transitionConfig: TransitionConfiguration
+	initialRouteName: 'welcomePage'
 })
 export default rootNavigator;
 

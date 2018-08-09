@@ -9,8 +9,8 @@ import MineScreen from '../views/Mine'
 
 export default class Main extends React.Component {
   	static navigationOptions = {
-    	header: null,
-    	title: '首页'
+		// header: null,
+    	headerTitle: '首页'
 	  }
 
   	constructor(props) {
