@@ -4,7 +4,7 @@ import { View, StyleSheet, Text, Button} from 'react-native'
 import Swiper from 'react-native-swiper'
 // import { Button } from 'antd-mobile-rn';
 
-export default class Main extends React.Component {
+export default class WelcomePage extends React.Component {
   	constructor(props) {
 		super(props)
 		this.state = {

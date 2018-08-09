@@ -39,10 +39,7 @@ let mainNavigator = createStackNavigator({
 let rootNavigator = createSwitchNavigator({
 		welcomePage: {
 			screen: WelcomePageScreen,
-			path: "/welcomePage",
-			navigationOptions: {//默认导航选项
-				title: "啥啥啥",
-			}
+			path: "/welcomePage"
 		},
 		main: {
 			screen: mainNavigator,
@@ -53,7 +50,8 @@ let rootNavigator = createSwitchNavigator({
 			path: "/login"
 		}
 	}, {
-	initialRouteName: 'welcomePage'
+	initialRouteName: 'main',
+	resetOnBlur: true //切换离开屏幕时，重置所有嵌套导航器的状态。默认为true
 })
 export default rootNavigator;
 

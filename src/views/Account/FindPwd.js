@@ -6,13 +6,13 @@ import {
 	View
 } from 'react-native';
 
-export default class Preload extends Component {
+export default class FindPwd extends Component {
 
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		return <View>找回密码</View>;
+		return <Text>找回密码</Text>;
 	}
 }

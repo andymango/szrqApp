@@ -1,26 +1,30 @@
-// import dialogModule from '../nativeBridge/dialogModule'
-import {
-	Alert
-} from 'react-native';
+import { Toast } from 'antd-mobile-rn';
+// import {
+// 	Alert
+// } from 'react-native';
 class Say {
 	constructor(obj) {
+		const duration = 3;
 		if(typeof obj === 'string'){
 			obj = {
-				title: obj,
-				type: 'warning'
+				title: obj
 			}
 		}
-		this.type = obj.type;
-		this.title = obj.title;
+		let content = obj.title;
+		let type = obj.type;
+		let onClose = obj.onHide || obj.onClose || obj.onhide;
+		let mask = !!obj.mask;
 
-		Alert.alert(this.title)
-		// if(this.type === 'success') {
-		// 	dialogModule.showSuccessToast(this.title);
-		// }else if(this.type === 'error') {
-		// 	dialogModule.showFailedToast(this.title);
-		// }else if(this.type === 'warning'){
-		// 	dialogModule.showToast(this.title);
-		// }
+
+		if(obj.type === 'success') {
+			Toast.success(content, duration, onClose, mask);
+		} else if(obj.type === 'error') {
+			Toast.fail(content, duration, onClose, mask)
+		} else if(obj.type === 'offline'){
+			Toast.offline(content, duration, onClose, mask)
+		} else{
+			Toast.info(content, duration, onClose, mask)
+		}
 	}
 }
 

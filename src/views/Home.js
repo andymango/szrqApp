@@ -5,14 +5,13 @@ import {
 	Text,
 	View
 } from 'react-native';
-
-export default class Preload extends Component {
-
+import {Say, Loading, Confirm} from '@/libs/btOverlay';
+export default class ViewComponent extends Component {
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		return <View>Home</View>;
+		return <Text>Home11</Text>;
 	}
 }

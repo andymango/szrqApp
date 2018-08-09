@@ -12,9 +12,9 @@ import React;
 class RNViewController: BaseViewController {
 
     override func viewDidLoad() {
+        print("rn page")
         super.viewDidLoad()
 //        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false;
-        print("this is rn page");
         
         let strUrl = "http://localhost:8081/index.bundle?platform=ios&dev=true"
         let jsCodeLocation = URL(string: strUrl)

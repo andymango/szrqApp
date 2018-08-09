@@ -1,16 +1,22 @@
-// import dialogModule from '../nativeBridge/dialogModule'
+import { Toast } from 'antd-mobile-rn';
+// import {
+// 	Alert
+// } from 'react-native';
+class Loading {
+	constructor() {
+	}
 
-// let loading = {
+	static show(title){
+		const duration = 30;
+		let content = title;
+		let mask = true;
+		let onClose = null;
 
-// 	show(param) {
-// 		dialogModule.showLoading(param);
-// 	},
+		Toast.loading(content, duration, onClose, mask)
+	}
+	static hide(){
+		Toast.hide();
+	}
+}
 
-// 	hide(){
-// 		dialogModule.dismissLoading();
-// 	}
-// };
-
-// export default loading;
-
-export default () => {}
+export default Loading;

@@ -6,13 +6,17 @@ import {
 	View
 } from 'react-native';
 
-export default class Preload extends Component {
+export default class ModifyPwd extends Component {
+	static navigationOptions = {
+	  // header: null,
+	  headerTitle: '修改密码'
+	}
 
 	constructor(props) {
 		super(props);
 	}
 
 	render() {
-		return <View>Mine</View>;
+		return <Text>修改密码</Text>;
 	}
 }

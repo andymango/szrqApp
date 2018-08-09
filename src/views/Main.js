@@ -5,14 +5,24 @@ import { TabBar, SearchBar } from 'antd-mobile-rn';
 import Swiper from 'react-native-swiper'
 
 import HomeScreen from '../views/Home'
-import MineScreen from '../views/Mine'
-
+import MineScreen from '../views/Mine/Mine'
 export default class Main extends React.Component {
-  	static navigationOptions = {
-		// header: null,
-    	headerTitle: '首页'
-	  }
+  	// static navigationOptions = {
+	// 	// header: null,
+	// 	// title: "ff"
+	// 	title: ({ state }) => `Chat with`
+	// }
+	// static navigationOptions = {
+    //     title: ({ state }) => `Chat with`
+	// };
 
+	// static navigationOptions = ({navigation}) => {
+	// 	console.log(navigation);
+	// 	return {
+
+	// 		title: `state ${aa}`
+	// 	}
+	// };
   	constructor(props) {
 		super(props)
 		this.state = {
@@ -21,20 +31,37 @@ export default class Main extends React.Component {
 	}
 
 	//切换tab选中项
-	onChangeTab(tabIndex: any) {
+	onChangeTab(tabIndex: any){
+		this.props.navigation.setParams({
+			tabIndex
+		})
 		this.setState({
 			selectedTab: tabIndex,
 		});
 	}
 
-	renderContent(pageText: any) {
-		return (
-		  	<View style={{ flex: 1, alignItems: 'center', backgroundColor: 'white' }}>
-				<SearchBar placeholder="Search" showCancelButton />
-				<Text style={{ margin: 50 }}>{pageText}</Text>
-		  	</View>
-		);
-	}
+	static navigationOptions = ({ navigation, screenProps }) => {
+		console.log('aaa', navOptions)
+		let navOptions = {
+			header: null
+		};
+		let tabIndex = navigation.state.params && navigation.state.params.tabIndex ? navigation.state.params.tabIndex : 0
+		switch(tabIndex){
+			case 1:
+				navOptions = {
+					title: "我的",
+					// headerRight:(
+					// 	<Text onPress={navigation.state.params ? navigation.state.params.navigatePress:null}>
+					// 		返回
+					// 	</Text>
+					// )
+				};
+				break;
+			default:
+				break;
+		}
+		return navOptions;
+	};
 	componentDidMount () {
 	}
 
@@ -53,7 +80,7 @@ export default class Main extends React.Component {
 						selected={this.state.selectedTab === 0 }
 						onPress={() => this.onChangeTab(0)}
 					>
-						{this.renderContent('home')}
+						<HomeScreen {...this.props} />
 					</TabBar.Item>
 					<TabBar.Item
 						title="我的"
@@ -62,7 +89,7 @@ export default class Main extends React.Component {
 						selected={this.state.selectedTab === 1 }
 						onPress={() => this.onChangeTab(1)}
 					>
-						{this.renderContent('mine')}
+						<MineScreen {...this.props} />
 					</TabBar.Item>
 				</TabBar>
 			</View>
@@ -71,29 +98,4 @@ export default class Main extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  	wrapper: {
- 	},
-  	slide1: {
-    	flex: 1,
-    	justifyContent: 'center',
-    	alignItems: 'center',
-    	backgroundColor: '#9DD6EB',
-  	},
-  	slide2: {
-    	flex: 1,
-    	justifyContent: 'center',
-    	alignItems: 'center',
-    	backgroundColor: '#97CAE5',
-  	},
-  	slide3: {
-		flex: 1,
-		justifyContent: 'center',
-		alignItems: 'center',
-		backgroundColor: '#92BBD9',
-  	},
-  	text: {
-    	color: '#fff',
-    	fontSize: 30,
-    	fontWeight: 'bold',
-  	}
 })
