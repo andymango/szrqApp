@@ -2,7 +2,8 @@ import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import { View, StyleSheet, Text, Button} from 'react-native'
 import Swiper from 'react-native-swiper'
-// import { Button } from 'antd-mobile-rn';
+import storage, {StorageKeys} from '@/libs/storage'
+// import EStyleSheet from 'react-native-extended-stylesheet';
 
 export default class WelcomePage extends React.Component {
   	constructor(props) {
@@ -10,12 +11,20 @@ export default class WelcomePage extends React.Component {
 		this.state = {
 		}
 	}
+	componentWillMount(){
+	}
 	componentDidMount () {
 	}
 
 	//页面跳转
 	skipPage() {
-		this.props.navigation.navigate('main');
+		storage.set(StorageKeys.IS_LANUCH_YET, true).then((data) => {
+			if(global.userInfo){
+				this.props.navigation.navigate('main');
+			} else{
+				this.props.navigation.navigate('login');
+			}
+		})
   	}
 
   render() {

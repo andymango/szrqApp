@@ -11,8 +11,7 @@ import {
 	UIManager
 } from 'react-native';
 
-export default {
-	//获取屏幕的实际宽度
+const _util = {
 	deviceW: Dimensions.get('window').width,
 	deviceH: Dimensions.get('window').height,
 	basePx: 375,
@@ -21,6 +20,10 @@ export default {
 	X_HEIGHT: 812,
 	isIos: Platform.OS === 'ios' ? true : false,
 	isAndroid: Platform.OS === 'android' ? true : false,
+}
+
+let util = Object.assign({}, _util, {
+	isIphoneX: _util.isIos && ((_util.deviceH === _util.X_HEIGHT && _util.deviceW === _util.X_WIDTH) ||(_util.deviceH === _util.X_WIDTH && _util.deviceW === _util.X_HEIGHT)),
 
 	REGEXP: {
 		/**
@@ -557,18 +560,6 @@ export default {
 		}
 	},
 
-	/**
-	 * 判断是否为iphoneX
-	 * @returns {boolean}
-	 */
-	isIphoneX() {
-		return (
-			Platform.OS === 'ios' &&
-			((deviceH === X_HEIGHT && deviceW === X_WIDTH) ||
-				(deviceH === X_WIDTH && deviceW === X_HEIGHT))
-		)
-	},
-
 	// /**
 	//  * 根据是否是iPhoneX返回不同的样式
 	//  * @param iphoneXStyle
@@ -632,4 +623,6 @@ export default {
 		//}
 		return data;
 	}
-}
+});
+
+export default util;

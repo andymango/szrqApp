@@ -28,7 +28,7 @@ let DEFAULT_CONFIG = {
 	APP_PAGE_PREFIX: "szrq://www.szrq.com",
 
 	//接口访问前缀
-	API_PREFIX: "http://192.168.129.48:8081"
+	API_PREFIX: "http://localhost:8081"
 };
 let env = "production";
 

@@ -1,47 +1,31 @@
 import React from 'react'
 import Ionicons from 'react-native-vector-icons/Ionicons'
-import { View, StyleSheet, Text, Button} from 'react-native'
-import { TabBar, SearchBar } from 'antd-mobile-rn';
-import Swiper from 'react-native-swiper'
-
+import { View, Text, Button} from 'react-native'
+import { TabBar } from 'antd-mobile-rn';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import HomeScreen from '../views/Home'
 import MineScreen from '../views/Mine/Mine'
+
 export default class Main extends React.Component {
-  	// static navigationOptions = {
-	// 	// header: null,
-	// 	// title: "ff"
-	// 	title: ({ state }) => `Chat with`
-	// }
-	// static navigationOptions = {
-    //     title: ({ state }) => `Chat with`
-	// };
-
-	// static navigationOptions = ({navigation}) => {
-	// 	console.log(navigation);
-	// 	return {
-
-	// 		title: `state ${aa}`
-	// 	}
-	// };
   	constructor(props) {
 		super(props)
-		this.state = {
-			selectedTab: 0
-		}
+	}
+
+	state = {
+		selectedTab: 0
 	}
 
 	//切换tab选中项
-	onChangeTab(tabIndex: any){
+	onChangeTab(tabIndex){
 		this.props.navigation.setParams({
 			tabIndex
 		})
 		this.setState({
-			selectedTab: tabIndex,
+			selectedTab: tabIndex
 		});
 	}
 
 	static navigationOptions = ({ navigation, screenProps }) => {
-		console.log('aaa', navOptions)
 		let navOptions = {
 			header: null
 		};
@@ -49,12 +33,7 @@ export default class Main extends React.Component {
 		switch(tabIndex){
 			case 1:
 				navOptions = {
-					title: "我的",
-					// headerRight:(
-					// 	<Text onPress={navigation.state.params ? navigation.state.params.navigatePress:null}>
-					// 		返回
-					// 	</Text>
-					// )
+					title: "我的"
 				};
 				break;
 			default:
@@ -62,6 +41,7 @@ export default class Main extends React.Component {
 		}
 		return navOptions;
 	};
+
 	componentDidMount () {
 	}
 
@@ -97,5 +77,5 @@ export default class Main extends React.Component {
   	}
 }
 
-const styles = StyleSheet.create({
+const styles = EStyleSheet.create({
 })

@@ -4,7 +4,7 @@ import { Toast } from 'antd-mobile-rn';
 // } from 'react-native';
 class Say {
 	constructor(obj) {
-		const duration = 3;
+		const duration = 2;
 		if(typeof obj === 'string'){
 			obj = {
 				title: obj

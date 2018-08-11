@@ -3,15 +3,15 @@ import GConfig from '../config';
 // import networkModule from "../libs/nativeBridge/networkModule";
 import Util from "../libs/utils";
 import qs from 'qs';
-import systemService from '@/services/system'
-import userService from '@/services/user'
+import {Say, Loading, Confirm} from '@/libs/btOverlay';
+// import systemService from '@/services/system'
 
 const hostPrefix = GConfig.API_PREFIX || '';
 Axios.defaults.headers.common['version'] = GConfig.appVersion;
 
-export default async function io(config) {
-	Axios.defaults.headers.common['deviceCode'] = await systemService.getDeviceCode();
-	Axios.defaults.headers.common['accessToken'] = await userService.getAccessToken();
+export default function io(config) {
+	Axios.defaults.headers.common['deviceCode'] = global.deviceCode;
+	Axios.defaults.headers.common['accessToken'] = global.accessToken;
 	// 删除空字段
 	if (config.data) {
 		for (let key in config.data) {
@@ -32,40 +32,34 @@ export default async function io(config) {
 		config.url = hostPrefix + config.url
 	}
 
-	let errorReturn = {
-		code: 0,
-		message: '请求失败'
-	};
-
-	let promise;
-	if (config.method === 'post') {
-		let postData = config.data;
-		if(config.data && config.isFormData !== true){//如果传进来本身已经是formdata，不要进行转化
-			postData = qs.stringify(config.data);
-		}
-		promise = Axios.post(config.url, postData).then((result) => {
-			resolve(result.data)
-			// resolve(result.data);
-		}, (err) => {
-			reject(errorReturn);
-		})
-	} else {
-		promise = Axios.get(config.url, {
-			params: config.data || config.params
-		}).then((result) => {
-			resolve(result.data)
-		}, (err) => {
-			reject(errorReturn);
-		})
-	}
-
-	return promise.then((result) => {
-		result = Util.parseData(result);
-
-		if (result.code && (result.code === 402 || result.code === 401)) {
-			console.log('需要用户登录');
+	return new Promise((resolve, reject) => {
+		let promise;
+		if (config.method === 'post') {
+			let postData = config.data;
+			if(config.data && config.isFormData !== true){//如果传进来本身已经是formdata，不要进行转化
+				postData = qs.stringify(config.data);
+			}
+			promise = Axios.post(config.url, postData)
+		} else {
+			promise = Axios.get(config.url, {
+				params: config.data || config.params
+			})
 		}
 
-		return result
+		promise.then((result) => {
+			result = Util.parseData(result.data);
+			if (result.code && (result.code === 1000)) {
+				Loading.hide();
+				console.log('需要用户登录');//这里需要跳转到登录、导航没托管状态管理这里暂时不好搞
+			} else{
+				resolve(result);
+			}
+		}, err => {
+			//log mark
+			resolve({
+				code: -1,
+				message: '请求错误'
+			});
+		})
 	})
 }

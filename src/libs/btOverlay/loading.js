@@ -6,16 +6,19 @@ class Loading {
 	constructor() {
 	}
 
+	static instance;
+
 	static show(title){
 		const duration = 30;
 		let content = title;
 		let mask = true;
 		let onClose = null;
 
-		Toast.loading(content, duration, onClose, mask)
+		instance = Toast.loading(content, duration, onClose, mask)
 	}
 	static hide(){
-		Toast.hide();
+		instance && instance.hide();
+		instance = null;
 	}
 }
 

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import {
 	Platform,
 	TouchableHighlight,

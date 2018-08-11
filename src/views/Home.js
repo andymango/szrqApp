@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import {
-	Platform,
-	TouchableHighlight,
 	Text,
 	View
 } from 'react-native';
+import EStyleSheet from 'react-native-extended-stylesheet';
+
 import {Say, Loading, Confirm} from '@/libs/btOverlay';
 export default class ViewComponent extends Component {
 	constructor(props) {
@@ -12,6 +12,15 @@ export default class ViewComponent extends Component {
 	}
 
 	render() {
-		return <Text>Home11</Text>;
+		return <View style={styles.wrapper}>
+			<Text>Home11</Text>
+		</View>;
 	}
 }
+
+const styles = EStyleSheet.create({
+	wrapper: {
+		backgroundColor: 'red',
+		marginTop: '$statusBarHeight',
+	},
+});
