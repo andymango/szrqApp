@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Linking } from 'react-native';
-import routeConfig from './router'
 
-export default function(Comp, uriPrefix) {
+export default function(Comp, routeConfig) {
   const router = Comp.router;
   return class extends Component {
     static router = router;
 
     _urlToPathAndParams(url) {
       const params = {};
-      const delimiter = uriPrefix || '://';
+      const delimiter = GConfig.APP_PAGE_PREFIX || '://';
       let path = url.split(delimiter)[1];
       let paramsArr = []
 
@@ -28,7 +27,7 @@ export default function(Comp, uriPrefix) {
         path = url;
       }
 
-      path = this._changePath(path)
+    //   path = this._changePath(path)
 
       return {
         path,
@@ -36,22 +35,23 @@ export default function(Comp, uriPrefix) {
       };
     }
 
-    _changePath(path){
-      let arr = path.split('?')
-      let path0 = routeConfig[arr[0]] || routeConfig[ '/' + arr[0]]
-      if(path0){
-        arr[0] = path0
-        return arr.join('?')
-      } else {
-        return path
-      }
-    }
+    // _changePath(path){
+    //   let arr = path.split('?')
+    //   let path0 = routeConfig[arr[0]] || routeConfig[ '/' + arr[0]]
+    //   if(path0){
+    //     arr[0] = path0.routeName
+    //     return arr.join('?')
+    //   } else {
+    //     return path
+    //   }
+    // }
 
     _handleOpenURL = (url) => {
       const parsedUrl = this._urlToPathAndParams(url);
       if (parsedUrl) {
         const { path, params } = parsedUrl;
-        const action = router.getActionForPathAndParams(path, params);
+		const action = router.getActionForPathAndParams(path, params);
+		console.log(action, path, params)
         if (action) {
           this.props.navigation.dispatch(action);
         }
@@ -60,11 +60,15 @@ export default function(Comp, uriPrefix) {
 
     componentDidMount() {
       Linking.addEventListener('url', ({ url }) => {
+		//   console.log(`addEventListener打开了url：${url}`)
         this._handleOpenURL(url);
       });
 
       Linking.getInitialURL().then(
-        (url) => url && this._handleOpenURL(url)
+        (url) => {
+			// console.log(`initial url is:${url}`)
+			return url && this._handleOpenURL(url)
+		}
       );
     }
 

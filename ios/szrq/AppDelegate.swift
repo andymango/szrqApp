@@ -13,7 +13,15 @@ import React
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+    func application(_ application: UIApplication,
+         open url: URL,
+         options: [UIApplicationOpenURLOptionsKey: Any]) -> Bool
+    {
+        print("0000000000000000000000", url)
+        return RCTLinkingManager.application(application, open: url, options: options);
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let router = Router.init(rootViewController: RNViewController());
     

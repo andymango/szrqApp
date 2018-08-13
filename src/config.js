@@ -28,7 +28,10 @@ let DEFAULT_CONFIG = {
 	APP_PAGE_PREFIX: "szrq://www.szrq.com",
 
 	//接口访问前缀
-	API_PREFIX: "http://localhost:8081"
+	API_PREFIX: "http://localhost:8081",
+
+	//下载页访问地址
+	DOWNLOAD_URL: 'http://www.baidu.com'
 };
 let env = "production";
 
