@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html id="ng-app" ng-controller="GController">
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+	<script src="./openApp.js"></script>
+	<script>
+	var GConfig = {
+		APP_PAGE_PREFIX: 'szrq://www.szrq.com'
+	}
+	</script>
+	<div>当前页面用来测试外部链接唤起app</div>
+	<div><a href="javascript:;" onclick="openApp('/demo')">打开/demo</a></div>
+	<div><a href="javascript:;" onclick="openApp('/login1')">打开/login1</a></div>
+	<div><a href="javascript:;" onclick="openApp('/modifyPwd')">打开/modifyPwd</a></div>
+	<div><a href="javascript:;" onclick="openApp('/')">打开/</a></div>
+</body>
+</html>

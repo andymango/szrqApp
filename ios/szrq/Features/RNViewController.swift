@@ -20,7 +20,6 @@ class RNViewController: BaseViewController {
         let jsCodeLocation = URL(string: strUrl)
 
         let rootView = RCTRootView(bundleURL: jsCodeLocation!, moduleName: "RNApp", initialProperties: nil, launchOptions: nil)
-//        let rootView = RCTRootView(bundleURL: <#T##URL!#>, moduleName: <#T##String!#>, initialProperties: <#T##[AnyHashable : Any]!#>, launchOptions: <#T##[AnyHashable : Any]!#>)
         self.view = rootView;
     }
 

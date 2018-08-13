@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import RootContainer from './router'
 // import createStore from './redux'
 import systemService from '@/services/system'
+import {Say, Loading, Confirm} from '@/libs/btOverlay';
 
 // const store = createStore()
 import {
